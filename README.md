@@ -102,6 +102,7 @@ console.log(source);
   b: "car",
   c: "pot"
 } </span>
+  <a href='https://javascript.plainenglish.io/difference-between-object-assign-and-object-create-in-javascript-6f3ee100f99d'>Article</a>
 </details>
 
 ---
