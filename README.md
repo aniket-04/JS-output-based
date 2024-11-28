@@ -81,6 +81,32 @@ However, when we use the === operator (Strict equality operator), both value and
 
 ---
 
+###### Question 5
+
+```javascript
+const target = { a: 'toy' , b: 'boy' };
+const source = { b: 'car', c: 'pot' };
+
+const returnedTarget = Object.assign(target, source);
+
+console.log(target);
+
+console.log(returnedTarget);
+ 
+console.log(source);
+```
+<details>
+<summary>Answer</summary>
+  <span> {
+  a: "toy",
+  b: "car",
+  c: "pot"
+} </span>
+</details>
+
+---
+
+
 
 
 
