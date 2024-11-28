@@ -8,12 +8,13 @@ function ab(a = 100, b = 20) {
 }
 
 ab(null, 200)
+ab(NaN, 200)
 
 ab(undefined, 200)
 ```
 <details>
 <summary>Answer</summary>
-  <span>200</span> | <span>300</span>
+  <span>200</span> | <span>NaN</span> <span>300</span>
 </details>
 
 ---
