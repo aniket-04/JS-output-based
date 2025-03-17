@@ -48,11 +48,14 @@ console.log(obj.name, obj.info.age);
 ###### Question 3
 
 ```javascript
-
+var a = 10;
+let a = 20;
+console.log(a)
 ```
 <details>
 <summary>Answer</summary>
-  <span> ... </span>
+  <span> Output : SyntaxError: Identifier 'a' has already been declared
+Reason : In Javascript, we cannot redeclare a variable with let if it has already been declared in the same scope. </span>
 </details>
 
 ---
@@ -106,6 +109,69 @@ console.log(source);
 </details>
 
 ---
+###### Question 6
+
+```javascript
+const user = { 
+name: "Surbhi dighe", 
+country: "India" 
+};
+const { name: fullname, country } = user;
+console.log(fullname);
+console.log(name);
+
+```
+<details>
+<summary>Answer</summary>
+  <span> Surbhi dighe </span>
+  <span> ReferenceError: name is not defined. it gives an error because name was assigned to a local variable fullname and therefore name is not directly accessible.</span>
+</details>
+
+---
+
+#### Question 7
+```javascript
+const arr = [11, 0, '', false, 2, 1];
+const filtered = arr.filter(Boolean);
+console.log(filtered);
+```
+<details>
+<summary>Answer</summary>
+  <span> [11,2,1] </span>
+  <span> Reason : filter(Boolean) removes all falsy values (0, "" (empty string), false, null, undefined, and NaN) from the array and keeps truthy ones.</span>
+
+</details>
+
+---
+
+### Question 8
+
+```javascript
+console.log(10 - "5");
+console.log("5" - 10);
+
+```
+
+<details>
+  <summary>Answer</summary>
+  <span> 5, -5 </span>
+</details>
+
+---
+
+###### Question template
+
+```javascript
+
+```
+<details>
+<summary>Answer</summary>
+  <span>  </span>
+</details>
+
+---
+
+
 
 
 
